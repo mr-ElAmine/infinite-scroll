@@ -1,0 +1,67 @@
+/* By moi */
+/* Réinitialisation des styles par défaut pour tous les éléments HTML */
+* {
+    box-sizing: border-box; /* Inclure les bordures et les rembourrages dans le calcul de la taille de la boîte */
+    margin: 0; /* Réinitialiser la marge */
+    padding: 0; /* Réinitialiser le rembourrage */
+    font-family: Arial, Helvetica, sans-serif; /* Définir la police de caractères par défaut */
+}
+
+/* Styles pour l'en-tête */
+header {
+    top: 0; /* Positionner l'en-tête en haut de la page */
+    background: #ffff; /* Définir la couleur de fond */
+    width: 100%; /* Définir la largeur à 100% de l'élément parent */
+    height: 50px; /* Définir la hauteur de l'en-tête */
+    display: flex; /* Utiliser flexbox pour aligner les éléments enfants */
+    justify-content: center; /* Centrer les éléments enfants horizontalement */  
+    align-items: center; /* Centrer les éléments enfants verticalement */
+    position: sticky; /* Positionnement de l'en-tête fixe */
+}
+
+/* Styles pour la galerie d'images */
+.gallery {
+    max-width: 90%; /* Définir la largeur maximale à 90% de l'élément parent */
+    margin: 5px auto; /* Définir une marge de 5 pixels sur le dessus et le bas, et une marge automatique sur les côtés */
+    display: flex; /* Utiliser flexbox pour aligner les éléments enfants */
+    flex-wrap: wrap; /* Permettre le passage à la ligne des éléments enfants */
+    justify-content: space-between; /* Espacer les éléments enfants de manière égale */
+    gap: 2vmin; /* Définir l'espacement entre les éléments enfants */
+}
+
+/* Styles pour chaque image dans la galerie */
+.gallery li {
+    list-style-type: none; /* Enlever la puce de liste */
+    height: 15rem; /* Définir la hauteur de chaque élément enfant à 15 rem */
+    flex-grow: 1; /* Permettre à chaque élément enfant de s'agrandir */
+}
+
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 900px) {
+    .gallery{
+        margin: 0 auto; /* Définir une marge automatique sur tous les côtés de la galerie d'images */
+    }
+    .gallery li {
+        height: 250px; /* Définir la hauteur de chaque élément enfant à 250 pixels */
+    }
+}
+
+/* Styles pour les écrans encore plus petits */
+@media screen and (max-width: 870px) {
+    .gallery {
+        justify-content: center; /* Centrer les éléments enfants horizontalement */
+        align-items: center; /* Centrer les éléments enfants verticalement */
+    }   
+}
+
+/* Styles pour les images dans la galerie */
+.gallery img {
+    width: 100%; /* Définir la largeur des images à 100% */
+    height: 100%; /* Définir la hauteur des images à 100% */
+    object-fit: cover; /* Adapter la taille de l'image pour couvrir la zone de l'élément parent */
+    border-radius: 5px; /* Arrondir les coins des images */
+}
+
+.intersection-watcher{
+    height: 1000px; /* Définir une hauteur fixe pour l'élément */
+}
