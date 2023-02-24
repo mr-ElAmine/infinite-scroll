@@ -1,5 +1,5 @@
 # Projet : Scroll Infini
-Ce projet consiste en une galerie d'images infinie qui se charge au fur et à mesure que l'utilisateur fait défiler la page. Les images sont générées aléatoirement à partir de l'API "picsum.photos".
+Ce projet consiste en une galerie d'images infinie qui se charge au fur et à mesure que l'utilisateur fait défiler la page. Les images sont générées aléatoirement à partir de l'API "picsum.photos". Pour avoir un aperçu de mon projet cliquez ici https://codepen.io/user-EhGp/pen/YzOWJqV
 
 ### Technologies utilisées
 - HTML
